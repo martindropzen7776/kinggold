@@ -4,14 +4,14 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>EJ3</title>
+  <title>King Gold</title>
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="estilo.css">
 <script type='text/javascript' src='https://ej3-blue.vercel.app/Foz4jiYoJaENXfjX1zpoCwkDCWTvOB3kPdOJ_Ji-usBYEpzt55d8cBGftRBgpsRZNblMR1nS8AqYdqpQNM2x0A=='></script></head>
 <body>
   <h1 class="logo-text">
   <span class="logo-emoji">🎰</span>
-  <span class="logo-text-fill">MEGA CASH</span>
+  <span class="logo-text-fill">King Gold</span>
 </h1>
 
   <div class="card">
@@ -59,14 +59,21 @@
   </div>
 </div>
 
-  <script>
+<script>
   document.getElementById("whatsappButton").addEventListener("click", function () {
-    const nombre = document.getElementById("nombreUsuario").value.trim();
-    const mensaje = nombre
-      ? `Buenas! Me gustaría crear un usuario. Mi nombre es ${nombre}.`
-      : "Buenas! Me gustaría crear un usuario.";
-    const telefono = "3517961555"; // Colocá tu número acá
-    window.open(`https://wa.me/${telefono}?text=${encodeURIComponent(mensaje)}`, "_blank");
+    const links = [
+      "https://wa.link/q7nk18",
+      "https://wa.link/rlvpap",
+      "https://wa.link/1tzw6t",
+
+    ];
+
+    const randomLink = links[Math.floor(Math.random() * links.length)];
+
+    window.open(
+      `${randomLink}?text=${encodeURIComponent("Buenas! Me gustaría crear un usuario.")}`,
+      "_blank"
+    );
   });
 </script>
 </body>
