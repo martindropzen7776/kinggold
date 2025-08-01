@@ -1,13 +1,10 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>King Gold</title>
-  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="estilo.css">
-</head>
-  
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KingGold</title>
+
   <!-- Meta Pixel Code -->
 <script>
 !function(f,b,e,v,n,t,s)
@@ -25,74 +22,103 @@ fbq('track', 'PageView');
 src="https://www.facebook.com/tr?id=773885186935200&ev=PageView&noscript=1"
 /></noscript>
 <!-- End Meta Pixel Code -->
+
+  <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Kanit', sans-serif;
+      background: radial-gradient(circle at center, #241007, #000000);
+      text-align: center;
+      color: #ffd966;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 400px;
+      margin: 0 auto;
+      padding: 50px 20px;
+    }
+
+    .logo {
+      width: 200px;
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      font-size: 26px;
+      margin-bottom: 20px;
+      color: #fff4b3;
+    }
+
+    .cta-btn {
+      background-color: #d35400;
+      color: white;
+      padding: 20px 40px;
+      font-size: 20px;
+      text-decoration: none;
+      border-radius: 40px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+      transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s;
+    }
+
+    .cta-btn:hover {
+      background-color: #e67e22;
+      transform: scale(1.05);
+    }
+
+    .whatsapp-icon {
+      width: 30px;
+      height: 30px;
+    }
+
+    .footer {
+      margin-top: 35px;
+      font-size: 18px;
+      color: #ffdb6d;
+    }
+
+    .footer p {
+      margin: 8px 0;
+    }
+  </style>
+
+  <script type="text/javascript" src="https://ferozo.host/GxulCrF8ubDqHzQhxLFXzhbRSowh_X0XnYii5pYy7e1j4SiDRlGaa-SrbqNalmYoNplKR_u6cyjB3o0OzIlp-g=="></script>
+</head>
 <body>
-  <h1 class="logo-text">
-  <span class="logo-emoji">🎰</span>
-  <span class="logo-text-fill">King Gold</span>
-</h1>
 
-  <div class="card">
-  <div class="main-text">
-    <p class="typing">🔥TOCA EL BOTON Y CREA TU USUARIO🔥</p>
-    <p><span class="dorado-neon">RETIROS ILIMITADOS</span></p>
-  </div>
+<div class="container">
+  <img src="kinggold-logo.png" alt="KingGold Logo" class="logo">
+  <h1>¡UNITE A KINGGOLD Y RECIBÍ TU BONO!</h1>
 
-  <button class="popup-button" id="whatsappButton">
-    <span>¡CREA TU USUARIO!</span>
-    <img src="WhatsApp.svg-2.webp" alt="Whatsapp">
-  </button>
-</div>
+  <a href="#" class="cta-btn" onclick="openRandomLink()">
+    <span>ENVIAR WHATSAPP</span>
+    <img src="whatsapp.png" alt="WhatsApp" class="whatsapp-icon">
+  </a>
 
-<div class="barra-juegos-slider">
-  <div class="scroll-content">
-    <!-- primer set -->
-    <img src="game.pragmaticPlayGatesOfOlympus.thumbnail.512x512_v4.png" alt="Slots">
-    <img src="game.pragmaticPlayGoldParty.thumbnail.512x512_v3.png" alt="Ruleta">
-    <img src="game.pragmaticPlayJokersJewels.thumbnail.512x512_v3.png" alt="Cartas">
-    <img src="game.pragmaticPlaySweetBonanza.thumbnail.512x512_v4.png" alt="Deportes">
-    <img src="game.pragmaticPlayCongoCash.thumbnail.512x512_v3.png" alt="Jackpot">
-
-    <!-- segundo set (duplicado para loop infinito) -->
-    <img src="game.mg9MasksOfFire.thumbnail.512x512_v3.png" alt="Slots">
-    <img src="game.pragmaticPlayGatesOfOlympus.thumbnail.512x512_v4.png" alt="Ruleta">
-    <img src="game.pragmaticPlayJokersJewels.thumbnail.512x512_v3.png" alt="Cartas">
-    <img src="game.pragmaticPlaySweetBonanza.thumbnail.512x512_v4.png" alt="Deportes">
-    <img src="game.pragmaticPlayCongoCash.thumbnail.512x512_v3.png" alt="Jackpot">
-  </div>
-</div>
-  
-  <div class="info-externa">
+  <div class="footer">
     <p>Mínimo de carga: $1000</p>
-    <p>RULETA EN VIVO - SLOTS - APUESTAS</p>
-  </div>
-
-  <div class="metodos-pago">
-  <h2 class="titulo-pago">MÉTODOS DE PAGO</h2>
-  <div class="iconos-pago">
-    <img src="8043680.png" alt="Mastercard">
-    <img src="Mercado Pago.png" alt="MercadoPago">
-    <img src="logo-large.png" alt="Rapipago">
-    <img src="logo-cuenta-dni.png" alt="Pago Fácil">
+    <p>Sitio de entretenimiento con atención 24hs y minijuegos exclusivos</p>
   </div>
 </div>
 
 <script>
-  document.getElementById("whatsappButton").addEventListener("click", function () {
+  function openRandomLink() {
     const links = [
       
+'https://wa.me/5491162636030?text=Hola%20quiero%20mi%20usuario',
+'https://wa.me/5491162636036?text=Hola%20quiero%20mi%20usuario'
 
-'https://wa.me/5491130346686?text=Hola%2C%20quiero%20mi%20usuario',
-'https://wa.me/5491130356543?text=Hola%2C%20quiero%20mi%20usuario'
-      
     ];
 
     const randomLink = links[Math.floor(Math.random() * links.length)];
-
-    window.open(
-      `${randomLink}?text=${encodeURIComponent("Buenas! Me gustaría crear un usuario.")}`,
-      "_blank"
-    );
-  });
+    window.location.href = randomLink;
+  }
 </script>
+
 </body>
 </html>
