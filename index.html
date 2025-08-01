@@ -68,6 +68,7 @@ src="https://www.facebook.com/tr?id=773885186935200&ev=PageView&noscript=1"
       gap: 10px;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
       transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s;
+      animation: pulse 2s infinite;
     }
 
     .cta-btn:hover {
@@ -86,6 +87,21 @@ src="https://www.facebook.com/tr?id=773885186935200&ev=PageView&noscript=1"
       color: #ffdb6d;
     }
 
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(255, 215, 0, 0.7); /* dorado */
+  }
+  70% {
+    transform: scale(1.05);
+    box-shadow: 0 0 0 15px rgba(255, 215, 0, 0);
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(255, 215, 0, 0);
+  }
+}
+    
     .footer p {
       margin: 8px 0;
     }
@@ -100,7 +116,7 @@ src="https://www.facebook.com/tr?id=773885186935200&ev=PageView&noscript=1"
   <h1>¡UNITE A KINGGOLD Y RECIBÍ TU BONO!</h1>
 
   <a href="#" class="cta-btn" onclick="openRandomLink()">
-    <span>QUIERO MI BONO</span>
+    <span>TOCA ACA Y RECLAMA TU BONO</span>
     <img src="whatsapp.png" alt="WhatsApp" class="whatsapp-icon">
   </a>
 
